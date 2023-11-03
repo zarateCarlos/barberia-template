@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Bebas Neue', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+    background-color: #1f1f1f;
+}
+
+.hero {
+    background-image: url(/images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 75vh;
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    color: #cf2d3a;
+    font-size: 56px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 50px;
+}
+
+.navbar ul li a {
+    color: aliceblue;
+    transition: 0.3s all;
+}
+
+.navbar ul li a:hover {
+    color: #cf2d3a;
+    transition: 0.3s all;
+}
+
+.titulo {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.titulo h1 {
+    font-size: 80px;
+    color: #cf2d3a;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.titulo p {
+    text-align: center;
+    width: 50%;
+}
+
+.datos {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-top: 30px;
+}
+
+.dato h4 {
+    color: #cf2d3a;
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+
+.bienvenido {
+    display: flex;
+
+
+}
+
+.bienvenidos-img {
+    background-image: url(/images/a1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 600px;
+
+}
+
+
+.bienvenidos-txt {
+    width: 50%;
+    padding: 100px 0px 0px 100px;
+}
+
+.bienvenidos-txt h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 70px;
+}
+
+.bienvenidos-txt p {
+    width: 70%;
+    margin: 20px 0px;
+    color: #cf2d3a;
+}
+
+.bienvenidos-txt .descripcion {
+    color: #ffffff;
+}
+
+.bienvenidos-txt a {
+    padding: 8px 16px;
+    background-color: #cf2d3a;
+    color: aliceblue;
+    margin-top: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+}
+
+.servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.servicios h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 70px;
+}
+
+hr {
+    width: 100px;
+    border: 2px solid #cf2d3a;
+}
+
+.servicios p {
+    margin-top: 30px;
+    text-align: center;
+    width: 60%;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.card {
+    width: 200px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+.card h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+
+}
+
+.card p {
+    font-size: 12px;
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+.card a {
+    color: #cf2d3a;
+}
+
+.servicios .info {
+    padding: 8px 16px;
+    background-color: #cf2d3a;
+    margin-top: 20px;
+    color: #ffffff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+}
+
+.precios {
+    width: 100%;
+    display: flex;
+    margin-top: 80px;
+}
+
+.precio-txt {
+    width: 50%;
+    padding: 120px 50px;
+}
+
+
+.precio-img {
+    background-image: url(/images/a2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100vh;
+}
+
+.precio-txt h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 70px;
+}
+
+.precio-txt p {
+    width: 80%;
+
+}
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+
+
+}
+
+.producto {
+    display: flex;
+    border-bottom: 2px solid white;
+    width: 80%;
+
+
+}
+
+.producto p:nth-child(2) {
+    margin-left: 400px;
+    color: #cf2d3a;
+}
+
+.productos .info {
+    padding: 8px 16px;
+    background-color: #cf2d3a;
+    margin-top: 50px;
+    color: #ffffff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    width: 19%;
+}
+
+.estilistas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 80px auto 100px;
+}
+.estilistas h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 70px;
+}
+.estilistas p {
+    margin-top: 30px;
+    text-align: center;
+    width: 60%;
+}
+.estilista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top:50px;
+    
+}
+.persona{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.persona img{
+    width: 200px;
+    border-radius: 10px;
+}
+.persona h3{
+    margin-top: 20px;
+    color: #cf2d3a;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+
+}
+.persona p{
+    margin-top: 10px;
+    font-size: 12px;
+}
+.persona a{
+    color: #cf2d3a;
+    margin-top: 20px;
+}
+.estilistas .info{
+    padding: 8px 16px;
+    background-color: #cf2d3a;
+    margin-top: 50px;
+    color: #ffffff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+}
