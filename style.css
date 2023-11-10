@@ -27,6 +27,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -40,6 +41,7 @@ body {
     align-items: center;
     justify-content: space-around;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .navbar ul {
@@ -83,6 +85,7 @@ body {
     justify-content: space-around;
     width: 80%;
     margin-top: 30px;
+    flex-wrap: wrap;
 }
 
 .dato h4 {
@@ -95,6 +98,7 @@ body {
 
 .bienvenido {
     display: flex;
+    flex-wrap: wrap;
 
 
 }
@@ -143,6 +147,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
     margin-top: 80px;
 }
 
@@ -166,6 +171,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
     width: 100%;
     margin-top: 30px;
@@ -276,40 +282,49 @@ hr {
     width: 19%;
 }
 
-.estilistas{
+.estilistas {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     width: 80%;
     margin: 80px auto 100px;
 }
+
 .estilistas h2 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 70px;
 }
+
 .estilistas p {
     margin-top: 30px;
     text-align: center;
     width: 60%;
 }
-.estilista{
+
+.estilista {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
-    margin-top:50px;
-    
+    margin-top: 50px;
+
 }
-.persona{
+
+.persona {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.persona img{
+
+.persona img {
     width: 200px;
     border-radius: 10px;
 }
-.persona h3{
+
+.persona h3 {
     margin-top: 20px;
     color: #cf2d3a;
     font-family: 'Bebas Neue', sans-serif;
@@ -317,19 +332,127 @@ hr {
     letter-spacing: 2px;
 
 }
-.persona p{
+
+.persona p {
     margin-top: 10px;
     font-size: 12px;
 }
-.persona a{
+
+.persona a {
     color: #cf2d3a;
     margin-top: 20px;
 }
-.estilistas .info{
+
+.estilistas .info {
     padding: 8px 16px;
     background-color: #cf2d3a;
     margin-top: 50px;
     color: #ffffff;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 20px;
+}
+
+@media screen and (max-width:768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .navbar ul li a {
+        text-transform: uppercase;
+    }
+
+    .titulo p {
+        width: 80%;
+    }
+
+    .dato {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .bienvenidos-img {
+        display: none;
+    }
+
+    .bienvenido {
+        width: 100%;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bienvenidos-txt {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .servicios {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .servicios p {
+        width: 80%;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .precio-img {
+        display: none;
+    }
+
+    .precio-txt {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .producto {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .producto p:nth-child(2) {
+        margin-left: 200px;
+
+    }
+
+    .productos {
+        align-items: center;
+    }
+
+    .productos .info {
+        width: 130px;
+    }
+
+    .estilistas h2 {
+        text-align: center;
+    }
+    .estilistas p{
+        width: 90%;
+    }
+    .estilista{
+        gap: 30px;
+    }
+
 }
